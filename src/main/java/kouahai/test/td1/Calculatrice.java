@@ -14,6 +14,10 @@ public class Calculatrice {
     }
 
     public static double division(int a, int b) {
+        if (b == 0) {
+            System.out.println("Erreur : Division par zéro");
+            throw new ArithmeticException("Division par zéro");
+        }
         return (double) a / b;
     }
 }
